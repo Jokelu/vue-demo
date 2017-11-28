@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+first
+</body>
+<script>
+  `let arr = [1,5,7]
+  let newArr = arr.map(function (item) {
+    return item+2
+  })
+  console.log(newArr)
+  let arr2 = arr.map(item => item+2)
+  console.log(arr2)
+   /*验证中文*/
+   let zz = '啊啊哎啊'
+//  let pat = new RegExp("^[\u4E00-\u9FA5]{2,4}$")
+  let pat = /^[\u4E00-\u9FA5]{2,4}$/
+  console.log(pat.test(zz))
+  `
+//  let pat = /e/
+  let str = '<el-form-item label="密码" prop="pass" value="132+">'
+  let pat = /^\w+$/
+  console.log(str.match(pat))
+</script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+	</body>
+	<script type="text/javascript">
+		function remove(arr, item) {
+			if(arr.length) {
+				var index = arr.indexOf(item);
+				if(index > -1) {
+					return arr.splice(index, 1)
+				}
+			}
+		}
+		let a = [1,2,3,5]
+		let b = remove(a,3)
+		console.log(b)
+	</script>
+
+</html>

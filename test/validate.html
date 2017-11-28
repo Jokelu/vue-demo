@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="../node_modules/vue/dist/vue.min.js"></script>
+</head>
+<body>
+  <div id="app">
+    <input type="text" v-model="formData.user" @blur="">
+    <span> {{msgfirst}}</span>
+    <input type="text" v-model="formData.psw">
+    <input type="text" v-model="formData.email">
+  </div>
+</body>
+<script>
+  new Vue({
+    el: '#app',
+    data() {
+      return{
+        formData: {
+          user:'',
+          psw:'',
+          email:''
+        }
+      }
+    },
+    method: {
+
+    }
+  })
+</script>
+</html>

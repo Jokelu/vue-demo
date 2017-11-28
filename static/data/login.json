@@ -1,0 +1,15 @@
+{
+  "result": {
+    "user": {
+      "name": "管理员",
+      "surname": null,
+      "userName": "admin",
+      "id": 1
+    }
+  },
+  "targetUrl": null,
+  "success": true,
+  "error": null,
+  "unAuthorizedRequest": false,
+  "__abp": true
+}

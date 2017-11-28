@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="../node_modules/vue/dist/vue.min.js"></script>
+  <script src="../node_modules/axios/dist/axios.js"></script>
+</head>
+<body>
+<div id="app">
+
+  <button @click="get">get</button>
+  <button @click="post">post</button>
+  <button></button>
+  <span>{{msgfirst}}</span>
+</div>
+</body>
+<script>
+  new Vue({
+    el: '#app',
+    data() {
+      return {
+        msg: ''
+      }
+    },
+    methods: {
+      get() {
+        axios.get('package.json', {
+          params: {
+            token: 'asd'
+          }
+        }).then(res => {
+          console.log(res)
+        }).catch(err => {
+          console.log(err)
+        })
+      },
+      post() {
+
+      }
+
+    }
+  })
+</script>
+</html>
